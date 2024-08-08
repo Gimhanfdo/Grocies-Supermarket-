@@ -1,6 +1,7 @@
 let tableBody = document.querySelector('#ordertable tbody');
 const quantityInputs = document.querySelectorAll("input[type='number']");
 
+//Function to update the total of the items in the cart
 function updateTotal(){
     let total = 0;
     quantityInputs.forEach(quantityInput => {
@@ -15,10 +16,12 @@ function updateTotal(){
     document.getElementById("totalamount").textContent = total.toFixed(2);
 }
 
+//The updateCart function is called whenever the value of an input field changes
 quantityInputs.forEach(quantityInput =>{
-    quantityInput.addEventListener("input", updateCart);
+    quantityInput.addEventListener("input", updateCart); 
 });
 
+//Function to update the table with the selected items
 function updateCart(event) {
     document.getElementById("ordertablesection").style.display = "block";
     document.getElementById("emptycarttext").style.display = "none";
@@ -54,6 +57,7 @@ function updateCart(event) {
         }
     });
 
+    //The table gets hidden if there are no items in the cart (table)
     if (tableBody.rows.length === 0){
         document.getElementById("ordertablesection").style.display = "none";
         document.getElementById("emptycarttext").style.display = "block";
@@ -64,8 +68,10 @@ function updateCart(event) {
     updateTotal();
 }
 
+//The clearTable function is called whenever the user clicks on the 'Clear Cart' button
 document.getElementById('removetablebtn').addEventListener('click', clearTable);
 
+//Function to clear the cart (table)
 function clearTable(){
     const table = document.getElementById('ordertable');
     const rowCount = table.rows.length;
@@ -77,18 +83,21 @@ function clearTable(){
         quantityInput.value = 0;
     });
 
+    //The table gets hidden as there are no items in the cart(table)
     document.getElementById("ordertablesection").style.display = "none";
- 
+    document.getElementById("emptycarttext").style.display = "block";
     document.getElementById("buybtn").style.visibility = "hidden";
     document.getElementById("favbtn").style.visibility = "hidden";
     updateTotal(); 
 }
 
+//The user is directed to the Payment page and the storeCart function is called when the buy button is clicked
 document.getElementById('buybtn').addEventListener('click', function() {
     window.location.href = 'payment.html';
     storeCart();
 });
 
+//Function to store the cart (table) in local storage
 function storeCart() {
     const table = document.getElementById('ordertable');
     const rows = table.rows;
@@ -106,8 +115,10 @@ function storeCart() {
     localStorage.setItem('shoppingCart', JSON.stringify(cartStorage));
 }
 
+//The addToFavourites function is called when the Add to Favourites button is clicked
 document.getElementById('favbtn').addEventListener('click', addToFavourites);
 
+//Function to add a cart(table) to favourite
 function addToFavourites(){
     let table = document.getElementById('ordertable');
     const rows = table.rows;
@@ -123,11 +134,13 @@ function addToFavourites(){
         favouriteCart.push(favouriteCartItems);
     }
     localStorage.setItem('favouriteCart', JSON.stringify(favouriteCart));
-    alert('The cart was added to your favourites');
+    alert('The cart was added to your favourites'); //The user gets an alert
 }
 
+//The applyFavourites function is called when the Apply Favourites button is clicked
 document.getElementById('applyfavbtn').addEventListener('click', applyFavourites);
 
+//Function to display the user's favourite cart
 function applyFavourites() {
     const favourites = JSON.parse(localStorage.getItem('favouriteCart'));
    
@@ -150,11 +163,6 @@ function applyFavourites() {
         });
 
         updateCart();
-        alert('Your favourite cart will now be shown');
     }
-
-    else{
-        alert("Your favourites list is empty")
-    }
-
+    alert('Your favourite cart will now be shown'); //The user gets an alert
 }

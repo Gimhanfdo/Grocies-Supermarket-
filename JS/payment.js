@@ -1,3 +1,4 @@
+//Display the user's shopping cart when the page is loaded
 window.addEventListener('load', function() {
     const cartData = JSON.parse(localStorage.getItem('shoppingCart'));
     if (cartData) {
@@ -13,6 +14,7 @@ window.addEventListener('load', function() {
     styleTable();
 });
 
+//Function to add styles to the table elements
 function styleTable(){
     const table = document.getElementById('ordertable');
     let lastRow = table.rows[table.rows.length - 1];
@@ -35,10 +37,12 @@ function styleTable(){
 
 const paymentMethods = document.getElementsByName('paymentmethod');
 
+//The displayCardDetails function gets called when the user selects one of the payment methods
 paymentMethods.forEach(function(item) {
     item.addEventListener('change', displayCardDetails);
 });
 
+//Function to display the Card Details input fields depending on the payment method the user selects
 function displayCardDetails() {
     if (this.value == 'card') {
         document.getElementById('card-details-fieldset').style.display = 'block';
@@ -63,6 +67,7 @@ const cvv = document.getElementById('text09');
 document.getElementById('paybtn').addEventListener('click', e => {
     e.preventDefault();
 
+    //The displayDeliveryDate function is called if the relevant user inputs are validated
     if (validateInputs()) {
         const paymentMethodValue = document.querySelector('input[name="paymentmethod"]:checked').value;
         if (paymentMethodValue == 'card') {
@@ -96,6 +101,7 @@ function setSuccess(element) {
     inputValidate.classList.remove('error');
 }
 
+//Function to validate the user inputs for Personal and Delivery details
 function validateInputs() {
     const nameValue = userName.value.trim();
     const numberValue = number.value.trim();
@@ -185,6 +191,7 @@ function validateInputs() {
     return validated;
 }
 
+//Function to validate the card details entered by the user
 function validateCardDetails() {
     const cardNumberValue = cardNumber.value.trim();
     const expiryDateValue = expiryDate.value.trim();
@@ -225,6 +232,7 @@ function validateCardDetails() {
     return validated;
 }
 
+//Function to display the delivery date
 function displayDeliveryDate() {
     var today = new Date();
     var deliveryDate = new Date(today);
