@@ -1,0 +1,278 @@
+/*CSS styles for the body section*/
+
+body{
+    font-family: 'Poppins';
+    color: antiquewhite;
+    margin: 60px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: 470;
+}
+
+header{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#logo{
+    height: 225px;
+    width: 350px;
+}
+
+nav{
+    background-color: #006ca5;
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;         
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.grid-item{
+    display: flex;
+    box-shadow: 0 4px 8px;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    border-style: solid;
+    border-color: #0071CE;
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.grid-item:hover{
+   background-color: #0071CE;
+}
+
+.grid-item a{
+    color: #152238;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.grid-item a:hover{
+    color:white
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: beige;
+    font-size: 15px;
+}
+
+a::after{
+    content: "";
+    background-color:aliceblue;
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+}
+
+nav a:hover::after{
+    width:100%;
+    transition: width 0.1s linear;
+}
+
+.section{
+    background-color: #003152;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.products1{
+    background-color: white ;
+    margin-bottom: 20px;
+    border: solid #003152 1px;
+}
+
+.products1 p{
+    color: #36454f;
+    font-weight: 470;
+}
+
+#intro{
+    background-color: #dfebf6;
+    color: black;
+}
+
+#services{
+    background-color: #dfebf6;
+    color: #003152;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+ul li{
+    font-weight: bold;
+    color: #003152;
+}
+
+#services1{
+    border: #f5f5f5 solid 1px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #f5f5f5;
+    color: #003152;
+    font-weight: 470;
+    margin-top: 0px;
+    box-shadow: 0 1px 1px;
+}
+
+#services1 ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+ol li:hover{
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+p{
+    text-align: justify;
+    font-size: 15px;
+}
+
+body img{
+    border-style: hidden;
+    border-radius: 10px;
+}
+
+.image{
+    width: 400px;
+    height: 250px;
+    margin: 0 3px;
+}
+
+/*CSS Styles for the footer section*/
+
+footer{
+    background-color:#dfebf6;
+    border-radius: 10px;
+    color: #242526;
+    font-size: 14px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_column a{
+    color: #006ca5;
+    font-size: 13px;
+    transition: 0.2s;
+    margin-top: 5px;
+}
+
+.footer_column a:hover{
+    font-weight: bold;
+}
+
+.footer_title p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon_sm{
+    display:block;
+    flex-direction: column;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.icon_sm:hover{
+    color: rgb(72, 134, 192);
+}
+
+/*Mobile view*/
+
+@media screen and (max-width:600px) {
+    body{
+        margin: 6px;
+    }
+
+    #logo{
+        height: auto;
+        width: 100%;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .grid-container{
+        display: none;
+    }
+
+    tr, td{
+        display: block;
+        width: 100%;
+    }
+
+    #introimage{
+        display: none;
+    }
+
+    #services1 ol{
+        display: block;
+        flex-direction: column;
+    }
+
+    ol li :hover{
+        font-weight: initial;
+    }
+
+    .image{
+        height: auto;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

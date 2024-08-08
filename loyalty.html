@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Grocies, Supermarket, Loyalty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join with our Grocies Loyalty program for a finer shopping experience.">
+    
+    <title>Grocies | Loyalty</title>
+    <link rel="stylesheet" href="Styles/loyalty.css"> <!--Link to the CSS stylesheet-->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Links to the font used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Script file for social media icons in the footer-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <img src="Images/Home/Grocies_Logo.png" alt="Grocies SuperMarket Logo" id="logo"> <!--Logo-->
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="dairy.html">Dairy Products</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="cosmetics.html">Cosmetics and Skin Care</a>
+            <a href="order.html">Order Now</a>
+            <a href="loyalty.html">Grocies Loyalty</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="section" id="intro">
+            <h1>Join the Grocies Loyalty Program Today</h1>
+            <p>Earn rewards as you shop with us. Join now for exclusive discounts, special offers, and more.</p>
+        </section>
+
+        <div class="image-container">
+            <img src="Images/Loyalty/loyaltyheader.webp" id="image" alt="Header Image" height="300px" width="500px">
+        </div>
+
+        <section class="section" id="programlist">
+            <h2>Pick your Loyalty Program</h2>
+        </section>
+
+        <table> <!--A table containing benefits provided for each loyalty scheme-->
+            <tr>
+            <td>
+            <section class="section" id="gold">
+                <h3>Grocies Gold Club</h3>
+                <ul>
+                    <li>Points Accumulation</li>
+                    <li>Exclusive Discounts</li>
+                    <li>Birthday Bonus</li>
+                    <li>Priority Customer Service</li>
+                    <li>VIP Events</li>
+                    <li>Free Home Delivery</li>
+                </ul>
+            </section>
+            </td>
+            <td>
+            <section class="section" id="rewards">
+                <h3>Grocies Rewards Plus</h3>
+                <ul>
+                    <li>Instant Savings</li>
+                    <li>Double Points Days</li>
+                    <li>Member-Only Offers</li>
+                    <li>Digital Coupons</li>
+                    <li>Fuel Discounts</li>
+                    <li>Free Product Samples</li>
+                </ul>
+            </section>
+            </td>
+            <td>
+            <section class="section" id="family">
+                <h3>Grocies Family Rewards</h3>
+                <ul>
+                    <li>Family Points Pooling</li>
+                    <li>Kids Club Benefits</li>
+                    <li>Family Events</li>
+                    <li>Parenting Resources</li>
+                    <li>Discounts on Family Essentials</li>
+                    <li>Community Support</li>
+                </ul>
+            </section>
+            </td>
+            </tr>
+        </table>
+
+        <div class="section" id="form"> 
+            <form action="#" method="post"> <!--Loyalty Registration Form-->
+                <p>Title</p>
+                <input type="radio" name="title" id="radio01" value="dr"> <label for="radio01">Dr.</label> 
+                <input type="radio" name="title" id="radio02" value="mr"> <label for="radio02">Mr.</label>
+                <input type="radio" name="title" id="radio03" value="mrs"> <label for="radio03">Mrs.</label>
+                <input type="radio" name="title" id="radio04" value="ms"> <label for="radio04">Ms.</label>
+                <input type="radio" name="title" id="radio05" value="miss"> <label for="radio05">Miss</label>
+                <br><br>
+                <label for="text01">Full Name </label>
+                <br><br>
+                <input type="text" name="fullname" id="text01">
+                <br><br>
+                <label for="text02">Contact Number </label>
+                <br><br>
+                <input type="text" name="number" id="text02">
+                <br><br>
+                <label for="text03">NIC </label>
+                <br><br>
+                <input type="text" name="nic" id="text03">
+                <br><br>
+                <label for="textarea01">Address </label>
+                <br><br>
+                <textarea name="address" id="textarea01" cols="60" rows="4"></textarea>
+                <br><br>
+                <label for="text04">Email Address </label>
+                <br><br>
+                <input type="text" name="email" id="text04">
+                <br><br>
+                <label for="select01">Choose Your Loyalty Program</label>
+                <br><br>
+                <select name="loyalty" id="select01">
+                    <option value="gold">Grocies Gold Club</option>
+                    <option value="rewards">Grocies Rewards Plus</option>
+                    <option value="family">Grocies Family Rewards</option>
+                </select>
+                <br><br>
+                <label for="radio06">I hereby confirm that the information given above is accurate.</label>
+                <input type="radio" name="confirmation" id="radio06" value="yes"> Yes
+                <br><br>
+                <div class="buttons-container">
+                    <input type="submit" value="Submit" class="button">
+                    <input type="reset" value="Clear all" class="button">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"> <!--Links in the footer are arranged in a flexbox-->
+            <div class="footer_column" id="sm_links"> 
+                <h4>Follow us on</h4>
+                <a class="icon_sm" href="https://twitter.com/?logout=1714306497312" target="_blank" aria-label="Follow us on Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a class="icon_sm" href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="icon_sm" href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afcx4g01JxylzPQ9BTgioZxRQjd4Q7seIzuSEsvbL5yhdnn7ld_71DVhhr56lCofN3MTT_OWHz9-3Ld_7VKB8qlP9Oteaeq5zlFmouZ4ZZPgDw&smuh=33718&lh=Ac87Dg4Viik07K4myCw" target="_blank" aria-label="Follow us on Facebook"><ion-icon name="logo-facebook"></ion-icon></a> 
+            </div>
+
+            <div class="footer_column">
+                <h4>Useful Links</h4>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Grocies Privacy Policy</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer_column">
+                <h4>Browse our Products</h4>
+                <a href="cosmetics.html">Cosmetics and Skin Care</a>
+                <a href="dairy.html">Dairy Products</a>
+                <a href="vegetables.html">Vegetables</a>
+            </div>
+
+            <div class="footer_column">
+                <h4>Customer Service</h4>
+                <a href="about.html">About Us</a>
+                <a href="loyalty.html">Grocies Loyalty</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer_title">
+            <p>Grocies Supermarket Sri Lanka &copy; All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--References of content-->
+    <!--Loyalty schemes included are AI generated-->
+</body>
+</html>

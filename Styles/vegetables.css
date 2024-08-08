@@ -1,0 +1,248 @@
+/*CSS styles for the body section*/
+
+body{
+    font-family: 'Poppins';
+    margin: 60px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: 470;
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#logo{
+    height: 225px;
+    width: 350px;
+}
+
+nav{
+    background-color: #006ca5;
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: beige;
+    font-size: 15px;
+}
+
+a::after{
+    content: "";
+    background-color:aliceblue;
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+}
+
+nav a:hover::after{
+    width:100%;
+    transition: width 0.2s linear;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;         
+}
+
+.section{ 
+    color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#veg{
+    background-color: #dfebf6;
+    color: #242526;
+    text-align: center;
+}
+
+#venues{
+    background-color: #f5f5f5;
+    color:#242526;
+}
+
+#venues h3{
+    text-align: center;
+}
+
+#jump{
+    display: inline-block;
+}
+
+.container{
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.box{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #dfebf6;
+}
+
+.box img{
+    height: 230px;
+    width: 240px;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    border-color: #003152;
+    transition: 0.3s;
+}
+
+.desc{
+    border-style:none;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    background-color: #dfebf6;
+    font-size: small;
+    color:#152238;
+    text-align: center;
+}
+
+.ordernow{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ordernow a{
+    color: green;
+    font-size: small;
+    font-weight: 600;
+}
+
+.ordernow a:hover{
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+ul li{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+ul li p{
+    font-weight: 470;
+}
+
+/*CSS Styles for the footer section*/
+
+footer{
+    background-color:#dfebf6;
+    border-radius: 10px;
+    color: #242526;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_column a{
+    color: #006ca5;
+    font-size: 13px;
+    transition: 0.2s;
+    margin-top: 5px;
+}
+
+.footer_column a:hover{
+    font-weight: bold;
+}
+
+.footer_title p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon_sm{
+    transition: 0.2s;
+    display:inline-block;
+}
+
+.icon_sm:hover{
+    color: rgb(72, 134, 192);
+}
+
+/*Mobile view*/
+
+@media screen and (max-width:600px){
+    body{
+        margin: 6px;
+    }
+
+    #logo{
+        width: 100%;
+        height: auto;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .container{
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #venues h3{
+        font-size: 16px;
+    }
+
+    ul li{
+        font-weight: bold;
+        list-style-type: none;
+    }
+
+    .ordernow a{
+        font-weight: bolder;
+    }
+
+    .ordernow a:hover{
+        font-weight: initial;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

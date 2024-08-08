@@ -1,0 +1,293 @@
+/*CSS styles for the body section*/
+
+body{
+    font-family: 'Poppins';
+    margin: 60px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: 470;
+    text-align: center;
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#logo{
+    height: 225px;
+    width: 350px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;         
+}
+
+h1{
+    color: #001e09;
+}
+
+.section{ 
+    color: #242526;
+    padding: 20px;
+    border-radius: 10px;
+    /*background-color: #f5f5f5;*/
+}
+
+#intro{
+    background-color: #dfebf6;
+    margin-bottom: 2px;
+}
+
+h3{
+    font-size: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    color: #152238;
+    background-color: #b6cadf;
+}
+
+fieldset {
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid #b6cadf;
+    border-top: none;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f5f5f5;
+}
+
+#card-details-fieldset{
+    margin-top: 10px;
+    border-radius: 20px;
+    border-top: 1px solid #b6cadf;
+    display: none;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 14px;
+    color: green;
+}
+
+.label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 1px solid #b6cadf;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #003152;
+    font-weight: bold;
+    font-size: small;
+}
+
+input[type="date"]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #003152;
+    font-weight: bold;
+}
+
+.input-validate.success input {
+    border-color: #09c372;
+}
+
+.input-validate.error input {
+    border-color: #ff2c2c;
+}
+
+.input-validate .error {
+    color: #ff2c2c;
+    font-family: 'Poppins';
+    font-size: smaller;
+    height: 13px;
+}
+
+#confirmation-message{
+    font-weight: bold;
+    font-size: 16px;
+    color: darkgreen;
+    background-color: #d1ffbd;
+    margin-bottom: 20px;
+    border: 2px solid #d1ffbd;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.card-image{
+    width: 85px;
+    height: 60px;
+}
+
+#paybtn{
+    background-color: #003152;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 600;
+    width: 40%;
+    border: 1.5px solid #152238;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px 30px;
+    margin-bottom: 10px;
+}
+
+#paybtn:hover{
+    background-color: green;
+    border: 1.5px solid green;
+    color: white;
+    cursor: pointer;
+}
+
+/*CSS styles for the table*/
+
+#ordertable{
+    width: 100%;
+    font-size: small;
+    margin: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#ordertable tr:nth-child(even){background-color: #ddd;}
+
+#ordetable th{
+    background-color: white;
+    color: #152238;
+    height: 40px;
+  }
+
+#ordertable tr:nth-child(1) {
+    color: black;
+}
+
+#ordertable td{
+    color: #242526;
+    background-color: white;
+    height: 40px;
+}
+
+#ordertable td:nth-child(1) {
+    color: green;
+    font-weight: bold;
+}
+
+#ordertable td:nth-child(5) {
+    display: none;
+}
+
+#item-column{
+    width: 40%;
+}
+
+#unit-price-column{
+    width: 15%;
+}
+
+#totalamount{
+    font-weight: bold;
+    color: green;
+}
+
+/*CSS Styles for the footer section*/
+
+footer{
+    background-color:#dfebf6;
+    border-radius: 10px;
+    color: #242526;
+    font-size: 14px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_column a{
+    position: relative;
+    text-decoration: none;
+    color: #006ca5;
+    font-size: 13px;
+    transition: 0.2s;
+    margin-top: 5px;
+}
+
+.footer_column a:hover{
+    font-weight: bold;
+}
+
+.footer_title p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*Mobile view*/
+
+@media screen and (max-width:600px){
+    body{
+        margin: 6px;
+    }
+
+    #logo{
+        width: 100%;
+        height: auto;
+    }
+
+    input[type="text"], input[type="email"], input[type="date"]{
+        width: 75%;
+    }
+
+    #paybtn{
+        width: 80%;
+        background-color: green;
+    }
+
+    #confirmation-message{
+        font-size: small;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_column a{
+        margin-top: 5px;
+    }
+}

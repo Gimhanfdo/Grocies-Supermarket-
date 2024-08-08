@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Grocies, Supermarket, Order">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Need something? Place your order here.">
+    
+    <title>Grocies | Order Now</title>
+    <link rel="stylesheet" href="Styles/order.css"> <!--Link to the CSS stylesheet-->
+    <script src="JS/order.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Links to the font used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Script file for social media icons in the footer-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="image-container">
+            <img src="Images/Home/Grocies_Logo.png" alt="Grocies Supermarket Logo" id="logo"> <!--Logo-->
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="dairy.html">Dairy Products</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="cosmetics.html">Cosmetics and Skin Care</a>
+            <a href="order.html">Order Now</a>
+            <a href="loyalty.html">Grocies Loyalty</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" id="intro">
+            <h1>Found what you need? <br> Place your order here</h1>
+            <a href="#shoppingcart" id="cartlink">View your cart</a>
+        </section>
+
+        <section>
+            <h3>Fruits</h3>
+            <div class="container">
+                <div class="box">
+                    <img src="Images/Order/fruits1.jpg" alt="Mango">
+                    <br>
+                    <div class="desc">Mango <br><b>Rs 74.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Mango" data-item-price="740.00" name="fruits1qty" class="fruitsquantity" id="fruits1qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits2.jpeg" alt="Avacado">
+                    <br>
+                    <div class="desc">Avacado <br><b>Rs 48.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Avacado" data-item-price="480.00" name="fruits2qty" class="fruitsquantity" id="fruits2qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits3.jpg" alt="Guava">
+                    <br>
+                    <div class="desc">Guava <br><b>Rs 37.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Guava" data-item-price="370.00" name="fruits3qty" class="fruitsquantity" id="fruits3qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits4.webp" alt="Red Apple">
+                    <br>
+                    <div class="desc">Red Apple <br><b>Rs 2050.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Red Apple" data-item-price="2050.00" name="fruits4qty" class="fruitsquantity" id="fruits4qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits5.jpg" alt="Green Apple">
+                    <br>
+                    <div class="desc">Green Apple <br><b>Rs 1950.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Green Apple" data-item-price="1950.00" name="fruits5qty" class="fruitsquantity" id="fruits5qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits6.jpeg" alt="Red Grapes">
+                    <br>
+                    <div class="desc">Red Grapes <br><b>Rs 2010.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Red Grapes" data-item-price="2010.00" name="fruits6qty" class="fruitsquantity" id="fruits6qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits7.jpeg" alt="Banana - Ambul">
+                    <br>
+                    <div class="desc">Banana - Ambul <br><b>Rs 29.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Banana - Ambul" data-item-price="290.00" name="fruits7qty" class="fruitsquantity" id="fruits7qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/fruits8.webp" alt="Watermelon">
+                    <br>
+                    <div class="desc">Watermelon <br><b>Rs 235.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Watermelon" data-item-price="235.00" name="fruits8qty" class="fruitsquantity" id="fruits8qty" value="0" min="0" step="0.1"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Vegetables</h3>
+            <div class="container">
+                <div class="box">
+                    <img src="Images/Order/veg1.jpeg" alt="Leeks">
+                    <br>
+                    <div class="desc">Leeks <br><b>Rs 65.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Leeks" data-item-price="650.00" name="veg1qty" class="vegquantity" id="veg1qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg2.jpeg" alt="Green Chilli">
+                    <br>
+                    <div class="desc">Green Chilli <br><b>Rs 85.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Green Chilli" data-item-price="850.00" name="veg2qty" class="vegquantity" id="veg2qty" value="0" min="0" step="0.1"></div>            
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg3.jpg" alt="Carrot">
+                    <br>
+                    <div class="desc">Carrot <br><b>Rs 68.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Carrot" data-item-price="680.00" name="veg3qty" class="vegquantity" id="veg3qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg4.jpg" alt="Cabbage">
+                    <br>
+                    <div class="desc">Cabbage <br><b>Rs 52.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Cabbage" data-item-price="520.00" name="veg4qty" class="vegquantity" id="veg4qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg5.png" alt="Potato">
+                    <br>
+                    <div class="desc">Potato <br><b>Rs 205.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Potato" data-item-price="2050.00" name="veg5qty" class="vegquantity" id="veg5qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg6.webp" alt="Capsicum">
+                    <br>
+                    <div class="desc">Capsicum <br><b>Rs 92.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Capsicum" data-item-price="920.00" name="veg6qty" class="vegquantity" id="veg6qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg7.jpg" alt="Garlic">
+                    <br>
+                    <div class="desc">Garlic <br><b>Rs 256.00 (100g)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Garlic" data-item-price="2560.00" name="veg7qty" class="vegquantity" id="veg7qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/veg8.jpg" alt="Ginger">
+                    <br>
+                    <div class="desc">Ginger <br><b>Rs 1175.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Ginger" data-item-price="1175.00" name="veg8qty" class="vegquantity" id="veg8qty" value="0" min="0" step="0.1"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Dairy Produce</h3>
+            <div class="container">
+                <div class="box">
+                    <img src="Images/Order/dairy1.jpeg" alt="RichLife Full Cream Fresh Milk, 1l">
+                    <br>
+                    <div class="desc">RichLife Full Cream Fresh Milk, 1l <br><b>Rs 550.00</b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="RichLife Full Cream Fresh Milk, 1l" data-item-price="550.00" name="dairy1qty" class="dairyquantity" id="dairy1qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy2.jpeg" alt="RichLife Non-Fat Fresh Milk, 1l">
+                    <br>
+                    <div class="desc">RichLife Non-Fat Fresh Milk, 1l <br><b>Rs 580.00</b> </div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="RichLife Non-Fat Fresh Milk, 1l" data-item-price="580.00"  name="dairy2qty" class="dairyquantity" id="dairy2qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy3.jpeg" alt="RichLife Low-Fat Fresh Milk, 1l">
+                    <br>
+                    <div class="desc">RichLife Low-Fat Fresh Milk, 1l <br><b>Rs 560.00</b> </div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="RichLife Low-Fat Fresh Milk, 1l" data-item-price="560.00"  name="dairy3qty" class="dairyquantity" id="dairy3qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy4.webp" alt="Ambewela Full Cream Fresh Milk, 1l">
+                    <br>
+                    <div class="desc">Ambewela Full Cream Fresh Milk, 1l <br><b>Rs 540.00</b> </div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Ambewela Full Cream Fresh Milk, 1l" data-item-price="540.00"  name="dairy4qty" class="dairyquantity" id="dairy4qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy5.jpg" alt="Happy Cow Cheese Wedges, 120g">
+                    <br>
+                    <div class="desc">Happy Cow Cheese Wedges, 120g <br><b>Rs 780.00</b> </div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Happy Cow Wedges, 120g" data-item-price="780.00"  name="dairy5qty" class="dairyquantity" id="dairy5qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy6.jpg" alt="Happy Cow Cheese Slices, 200g">
+                    <br>
+                    <div class="desc">Happy Cow Cheese Slices, 200g <br><b>Rs 920.00</b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Happy Cow Cheese Slices, 200g" data-item-price="920.00"  name="dairy6qty" class="dairyquantity" id="dairy6qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy7.jpeg" alt="Kotmale Processed Cheese, 200g">
+                    <br>
+                    <div class="desc">Kotmale Processed Cheese, 200g <br><b>Rs 900.00</b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Kotmale Processed Cheese, 200g" data-item-price="900.00"  name="dairy7qty" class="dairyquantity" id="dairy7qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/dairy8.jpg" alt="Kotmale Ball Cheese">
+                    <br>
+                    <div class="desc">Kotmale Ball Cheese <br><b>Rs 950.00 (1kg)</b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Kotmale Ball Cheese" data-item-price="950.00"  name="dairy8qty" class="dairyquantity" id="dairy8qty" value="0" min="0"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Meat and Seafood</h3>
+            <div class="container">
+                <div class="box">
+                    <img src="Images/Order/meat1.webp" alt="Chicken Thigh (Skinless)">
+                    <br>
+                    <div class="desc">Chicken Thigh (Skinless) <br><b>Rs 1990.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Chicken Thigh (Skinless)" data-item-price="1990.00"  name="meat1qty" class="meatquantity" id="meat1qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat2.jpeg" alt="Chicken Liver">
+                    <br>
+                    <div class="desc">Chicken Liver <br><b>Rs 980.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Chicken Liver" data-item-price="980.00" name="meat2qty" class="meatquantity" id="meat2qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat3.jpg" alt="Pork Chops">
+                    <br>
+                    <div class="desc">Pork Chops <br><b>Rs 2600.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Pork Chops" data-item-price="2600.00" name="meat3qty" class="meatquantity" id="meat3qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat4.jpg" alt="Meat Cubes">
+                    <br>
+                    <div class="desc">Meat Cubes <br><b>Rs 3130.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Meat Cubes" data-item-price="3130.00" name="meat4qty" class="meatquantity" id="meat4qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat5.jpg" alt="Tuna Fish">
+                    <br>
+                    <div class="desc">Tuna Fish <br><b>Rs 2200.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Tuna Fish" data-item-price="2200.00" name="meat5qty" class="meatquantity" id="meat5qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat6.jpg" alt="Prawns">
+                    <br>
+                    <div class="desc">Prawns <br><b>Rs 2230.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Prawns" data-item-price="2230.00" name="meat6qty" class="meatquantity" id="meat6qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat7.jpg" alt="Seer Fish Slices">
+                    <br>
+                    <div class="desc">Seer Fish Slices <br><b>Rs 4490.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Seer Fish Slices" data-item-price="4490.00" name="meat7qty" class="meatquantity" id="meat7qty" value="0" min="0" step="0.1"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/meat8.jpg" alt="Linna">
+                    <br>
+                    <div class="desc">Linna <br><b>Rs 990.00 (1kg)</b></div>
+                    <div class="quantity">Quantity (kg) : <input type="number" title="quantity" data-item-name="Linna" data-item-price="990.00" name="meat8qty" class="meatquantity" id="meat8qty" value="0" min="0" step="0.1"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Baking and Cooking Ingredients</h3>
+            <div class="container">
+                <div class="box">
+                    <img src="Images/Order/baking1.jpg" alt="Sugar and Spice White Sugar, 1kg">
+                    <br>
+                    <div class="desc">Sugar and Spice White Sugar, 1kg <br><b>Rs 385.00</b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Sugar and Spices White Sugar, 1kg" data-item-price="385.00" name="baking1qty" class="bakingquantity" id="baking1qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking2.jpg" alt="Sugar and Spice Brown Sugar, 1kg">
+                    <br>
+                    <div class="desc">Sugar and Spice Brown Sugar, 1kg <br><b>Rs 592.00 </b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Sugar and Spices Brown Sugar, 1kg" data-item-price="592.00" name="baking2qty" class="bakingquantity" id="baking2qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking3.jpg" alt="Finagle Bread Crumbs, 400g">
+                    <br>
+                    <div class="desc">Finagle Bread Crumbs, 400g <br><b>Rs 585.00 </b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Finagle Bread Crumbs, 400g" data-item-price="585.00" name="baking3qty" class="bakingquantity" id="baking3qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking4.jpg" alt="Prima Self Raising Flour, 1kg">
+                    <br>
+                    <div class="desc">Prima Self Raising Flour, 1kg <br><b>Rs 445.00 </b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Prima Self Raising Flour, 1kg" data-item-price="445.00" name="baking4qty" class="bakingquantity" id="baking4qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking5.jpg" alt="Fortune Coconut Oil, 1 Litre">
+                    <br>
+                    <div class="desc">Fortune Coconut Oil, 1 Litre <br><b>Rs 1390.00</b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Fortune Coconut Oil, 1 Litre" data-item-price="1390.00" name="baking5qty" class="bakingquantity" id="baking5qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking6.jpg" alt="Fortune Sunflower Oil, 1 Litre">
+                    <br>
+                    <div class="desc">Fortune Sunflower Oil, 1 Litre <br><b>Rs 1920.00 </b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" data-item-name="Fortune Sunflower Oil, 1 Litre" data-item-price="1920.00" name="baking6qty" class="bakingquantity" id="baking6qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking7.jpg" alt="Turkey Corn Oil, 1 Litre">
+                    <br>
+                    <div class="desc">Turkey Corn Oil, 1 Litre <br><b>Rs 2010.00 </b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" name="baking7qty" data-item-name="Turkey Corn Oil, 1 Litre" data-item-price="2010.00" class="bakingquantity" id="baking7qty" value="0" min="0"></div>
+                </div>
+                <div class="box">
+                    <img src="Images/Order/baking8.jpg" alt="Coopoliva Olive Oil, 500ml">
+                    <br>
+                    <div class="desc">Coopoliva Olive Oil, 500ml <br><b>Rs 4850.00 </b></div>
+                    <div class="quantity">Quantity : <input type="number" title="quantity" name="baking8qty" data-item-name="Coopoliva Olive Oil, 500ml" data-item-price="4850.00" class="bakingquantity" id="baking8qty" value="0" min="0"></div>
+                </div> 
+            </div>
+            <br><br>
+        </section>
+
+        <section class="section" id="shoppingcart">
+            <h1>What's in My Cart?</h1> 
+            <p>Want to order your favourites once again? Simply click on Apply Favourites.</p>
+            <button type="button" class="button" id="applyfavbtn">Apply Favourites</button>
+            <p id = "emptycarttext"><b>Your cart is empty, but it doesn't have to be. <br> Start shopping now!</b></p>
+        </section>
+
+        <div class="section" id="ordertablesection">
+            <table id="ordertable">
+                <thead>
+                    <tr>
+                        <th id="item-column">Item</th>
+                        <th id="unit-price-column">Unit Price (Rs.)</th>
+                        <th>Quantity</th>
+                        <th colspan="2">Amount (Rs.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Amount (Rs.)</th>
+                        <td id="totalamount" colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button type="button" class="button" id="removetablebtn">Clear Cart</button>
+            <button type="button" class="button" id="favbtn">Add to Favourites</button>
+            <br id="breaktag">
+            <button type="button" class="button" id="buybtn">Buy Now</button>
+        </div>
+        
+
+    </main>
+
+    <footer>
+        <div class="footer"> <!--Links in the footer are arranged in a flexbox-->
+            <div class="footer_column" id="sm_links"> 
+                <h4>Follow us on</h4>
+                <a class="icon_sm" href="https://twitter.com/?logout=1714306497312" target="_blank" aria-label="Follow us on Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a class="icon_sm" href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="icon_sm" href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afcx4g01JxylzPQ9BTgioZxRQjd4Q7seIzuSEsvbL5yhdnn7ld_71DVhhr56lCofN3MTT_OWHz9-3Ld_7VKB8qlP9Oteaeq5zlFmouZ4ZZPgDw&smuh=33718&lh=Ac87Dg4Viik07K4myCw" target="_blank" aria-label="Follow us on Facebook"><ion-icon name="logo-facebook"></ion-icon></a> 
+            </div>
+
+            <div class="footer_column">
+                <h4>Useful Links</h4>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Grocies Privacy Policy</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer_column">
+                <h4>Browse our Products</h4>
+                <a href="cosmetics.html">Cosmetics and Skin Care</a>
+                <a href="dairy.html">Dairy Products</a>
+                <a href="vegetables.html">Vegetables</a>
+            </div>
+
+            <div class="footer_column">
+                <h4>Customer Service</h4>
+                <a href="about.html">About Us</a>
+                <a href="loyalty.html">Grocies Loyalty</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer_title">
+            <p>Grocies Supermarket Sri Lanka &copy; All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,382 @@
+/*CSS styles for the body section*/
+
+body{
+    font-family: 'Poppins';
+    margin: 60px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-weight: 470;
+    text-align: center;
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#logo{
+    height: 225px;
+    width: 350px;
+}
+
+nav{
+    background-color: #006ca5;
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: beige;
+    font-size: 15px;
+}
+
+a::after{
+    content: "";
+    background-color:aliceblue;
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+}
+
+nav a:hover::after{
+    width:100%;
+    transition: width 0.1s linear;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;         
+}
+
+#intro{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #dfebf6;
+}
+
+#cartlink{
+    color: #006ca5;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+#cartlink:hover{
+    color: #003152
+}
+
+.section{ 
+    color: #242526;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ececec;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quantity{
+    text-align: center;
+    color: green;
+    font-weight: 700;
+    font-size: small;
+}
+
+#shoppingcart{
+    font-size: small;
+}
+
+#ordertablesection{
+    display: none;
+}
+
+input[type=number]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 1.5px solid #003152;
+    text-align: center;
+    color: green;
+    font-weight: 700;
+    font-size: small;
+}
+
+h3{
+    font-size: 16px;
+    padding: 20px;
+}
+
+.container{
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+.box{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #dfebf6;
+}
+
+.box img{
+    height: 230px;
+    width: 240px;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    border-color: #003152;
+    transition: 0.3s;
+}
+
+.desc{
+    border-style:none;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    background-color: #dfebf6;
+    font-size: small;
+    color:#152238;
+    text-align: center;
+}
+
+/*CSS styles for the table*/
+
+#ordertable{
+    width: 100%;
+    font-size: small;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+tr:nth-child(even){background-color: #ddd;}
+
+th{
+    background-color: white;
+    color: #152238;
+    height: 40px;
+  }
+
+td{
+    color: #242526;
+    background-color: white;
+    height: 40px;
+}
+
+td:nth-child(1) {
+    color: green;
+    font-weight: bold;
+}
+
+td:nth-child(5) {
+    color: red;
+    font-weight: bold;
+}
+
+#item-column{
+    width: 40%;
+}
+
+#unit-price-column{
+    width: 15%;
+}
+
+#totalamount{
+    font-weight: bold;
+    color: green;
+}
+
+/*CSS styles for the buttons*/
+
+.button{
+    background-color: white;
+    font-family: 'Poppins';
+    color: #152238;
+    font-weight: 600;
+    border: 1.5px solid #152238;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px 30px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.button:hover{
+    background-color: #003152;
+    color: white;
+    cursor: pointer;
+}
+
+.removerowbtn{
+    color: red;
+    background-color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    border-style: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.removerowbtn:hover{
+    color: darkred;
+}
+
+#buybtn{
+    visibility: hidden;
+    margin-top: 5px;
+    border-color: green;
+    color: darkgreen;
+    transition: 0.4s;
+}
+
+#buybtn:hover{
+    background-color: green;
+    color: white;
+}
+
+#favbtn{
+    visibility: hidden;
+}
+
+/*CSS Styles for the footer section*/
+
+footer{
+    background-color:#dfebf6;
+    border-radius: 10px;
+    color: #242526;
+    font-size: 14px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_column a{
+    color: #006ca5;
+    font-size: 13px;
+    transition: 0.2s;
+    margin-top: 5px;
+}
+
+.footer_column a:hover{
+    font-weight: bold;
+}
+
+.footer_title p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*Mobile view*/
+
+@media screen and (max-width:600px) {
+    body{
+        margin: 6px;
+    }
+
+    #logo{
+        width: 100%;
+        height: auto;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .container{
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .ordernow a{
+        font-weight: bolder;
+    }
+
+    .ordernow a:hover{
+        font-weight: initial;
+    }
+
+    #ordertable{
+        font-size: x-small;
+        font-weight: bold;
+    }
+
+    #ordertablesection{
+        background-color: white;
+    }
+
+    #totalamount {
+        font-size: small;
+    }
+
+    .button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        width: 70%;
+        font-size: small;
+        background-color: #003152;
+        color: white;
+    }
+
+    #breaktag{
+        display: none;
+    }
+
+    #buybtn{
+        color: white;
+        background-color: green;
+        margin-top: 15px;
+    }
+
+    .removerowbtn{
+        font-size: x-small;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
