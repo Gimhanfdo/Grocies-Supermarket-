@@ -74,6 +74,9 @@ document.getElementById('paybtn').addEventListener('click', e => {
             if (validateCardDetails()) {
                 displayDeliveryDate();
             }
+            else{
+                alert("Invalid or empty fields found. Please check and try again.")
+            }
         } else {
             displayDeliveryDate();
         }
