@@ -152,5 +152,9 @@ function applyFavourites() {
         updateCart();
     }
 
+    else{
+        alert("Your favourites list is empty")
+    }
+
     alert('Your favourite cart will now be shown');
 }
