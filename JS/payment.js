@@ -205,6 +205,9 @@ function validateCardDetails() {
     } else if (!/^\d+$/.test(cardNumberValue)) {
         setError(cardNumber, 'Credit card number should contain only digits');
         validated = false;
+    } else if (cardNumberValue.length !== 16) {
+        setError(cardNumber, 'Credit card number should contain exactly 16 digits');
+        validated = false;
     } else {
         setSuccess(cardNumber);
     }
@@ -239,10 +242,10 @@ function displayDeliveryDate() {
     deliveryDate.setDate(today.getDate() + 2);
 
     var date = deliveryDate.getDate();
-    var month = deliveryDate.getMonth() + 1; // Months are zero-based
+    var month = deliveryDate.getMonth() + 1; // Month number start from 0 therefore it is incremented by 1 
     var year = deliveryDate.getFullYear();
 
-    // Adding leading zero if month or date is less than 10
+    // Add a zero to the front if month or date is less than 10
     if (month < 10) {
         month = '0' + month;
     }
@@ -255,4 +258,5 @@ function displayDeliveryDate() {
     confirmationMessage.style.display = 'block';
     confirm("Order placed successfully.");
     confirmationMessage.innerText = "Thank you for your purchase. Your order will be delivered on or before " + formattedDeliveryDate;
+    document.getElementById('paybtn').style.display="none"; //Hides the Pay button
 }
